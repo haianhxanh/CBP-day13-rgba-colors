@@ -21,7 +21,7 @@ const changeColor = () => {
   document.querySelector('.wrapper').style.background = rgbaColor;  
   document.querySelector('#color').innerHTML = rgbaColor;
 
-  if (red >= 160 && green >= 120 && blue >= 120) {
+  if (red >= 160 && green >= 120 && blue >= 120 || alpha < 0.5) {
     document.querySelector('.wrapper').style.color = "black";
   }
 

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RGB Background colors</title>
   <link rel="stylesheet" href="rgb.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body id="body">
 
@@ -13,8 +14,9 @@
     <input type="text" name="" id="input1" placeholder="Red" maxlength="3">
     <input type="text" name="" id="input2" placeholder="Green" maxlength="3">
     <input type="text" name="" id="input3" placeholder="Blue" maxlength="3">
-    <input type="text" name="" id="input4" placeholder="Alpha" maxlength="3">
-    <button id="btn" changeColor()>Change the color</button>
+    <input type="text" name="" id="input4" placeholder="Alpha, insert 0 to 1" maxlength="3" required>
+    <p class="note">*Alpha is the transparency level, the lower the number, the more transparent the color.</p>
+    <div class="btn-div"><button id="btn" changeColor()>Change the color</button></div>
     <p id="text">Current background: <span id="color">rgba(0,0,0,0)</span></p>
   </div>
 
